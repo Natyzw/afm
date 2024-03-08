@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Natnael Sinebo">
+        <meta name="description" content="This page is about the AFM microscope in MIDL lab at sdsmt.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+<title>AFM  at MIDL</title>
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+<link rel="icon" href="afm.jpg" type="image/x-icon">
+<link rel="stylesheet" href="main.css" type="text/css">
+    </head>
+    <body>
+      <h1>AFM Microscope</h1>  
+      <hr>
+      <a href="afm_main.html">
+      <button>
+        <h3>Home</h3>
+      </button>
+      </a>
+      <a href="Parts.html">
+        <button>
+          <h3>Parts</h3>
+        </button>
+      </a>
+      <a href="login.html">
+        <button>
+          <h3>Login</h3>
+        </button>
+      </a>
+      <a href="References.html">
+        <button>
+          <h3>References</h3>
+        </button>
+      </a>
+      <a href="about.html">
+        <button>
+          <h3>About</h3>
+        </button>
+      </a>
+      <hr>
+      <h4>Atomic Force Microscope</h4>
+      <p>Atomic Force Microscope (AFM) is a powerful tool used for imaging and characterizing surfaces at the nanoscale. It works by using a tiny probe with a sharp tip that scans the surface of a sample. As the probe moves across the surface, it interacts with the atoms or molecules, creating a three dimentional map of the surface topography. The AFM can provide high-resolution images with details down to the atomic level. It is widely used in various fields of research, including nanotechnology, materials science, biology, and physics, to study surface properties, measure forces, and manipulate individial atoms or molecules.</p>
+      <figure>
+      <img src="Image/afm_image.jpg" alt="AFM image" title="AFM image" width="500" height="400" loading="lazy">
+    <figcaption>
+     Figure 1. Atomic Force Microscope image
+    </figcaption>  
+    </figure>
+    <hr>
+    <h3>Cypher ES Environmental AFM</h3>
+    <p>Cypher ES Environmental AFM is a type of atomic force microscope designed for imaging and analyzing samples in various environmental conditions, such as liquids or gases. It allows researchers to study the surface properties of materials at a nanoscale level. It's a powerful tool used in scientific research and nanotechnology.</p>
+
+  <model-viewer src="Shapes.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="commerce" poster="poster.webp" shadow-intensity="1" width="1000" height="1000">
+    <div class="progress-bar hide" slot="progress-bar">
+        <div class="update-bar"></div>
+    </div>
+    <button slot="ar-button" id="ar-button">
+        View in your space
+    </button>
+    <div id="ar-prompt">
+        <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+    </div>
+</model-viewer>  
+<hr>
+<model-viewer src="Shapes.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="commerce" poster="poster.webp" shadow-intensity="1" auto-rotate min-camera-orbit="auto auto 0.1994m" min-field-of-view="30deg">
+  <div class="progress-bar hide" slot="progress-bar">
+      <div class="update-bar"></div>
+  </div>
+  <button slot="ar-button" id="ar-button">
+      View in your space
+  </button>
+  <div id="ar-prompt">
+      <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+  </div>
+</model-viewer>
+<hr>
+</body>
+</html> 
