@@ -53,13 +53,21 @@
     <p>Cypher ES Environmental AFM is a type of atomic force microscope designed for imaging and analyzing samples in various environmental conditions, such as liquids or gases. It allows researchers to study the surface properties of materials at a nanoscale level. It's a powerful tool used in scientific research and nanotechnology.</p>
 
 <hr>
+<style>
+  model-viewer {
+    width: 300px;
+    height: 300px;
+  }
+</style>
 <model-viewer src="Probe.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="commerce" poster="poster.webp" shadow-intensity="1" auto-rotate min-camera-orbit="auto auto 0.1994m" min-field-of-view="30deg">
   <div class="progress-bar hide" slot="progress-bar">
       <div class="update-bar"></div>
   </div>
+  <a href="Disassemble.html">
   <button slot="ar-button" id="ar-button">
-      View in your space
+      Disassemble
   </button>
+  </a>
   <div id="ar-prompt">
       <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
   </div>
