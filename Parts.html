@@ -5,8 +5,9 @@
         <meta name="author" content="Natnael Sinebo">
         <meta name="description" content="This page is about the parts of the AFM microscope">
     <title>AFM at MIDL</title>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     <link rel="icon" href="afm.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="main.css" type="text/css">
+    <link rel="stylesheet" href="style.css" type="text/css">
     </head>
     <body>
         <h1>AFM Microscope</h1>
@@ -50,5 +51,29 @@
                 <li><p>Electronic Control System</p></li>
             </ul>
         </p>
+        <hr>
+        <div class="block left"> 
+            <style>
+                model-viewer {
+                    width:200px;
+                    height: 200px;
+                }
+            </style>
+            <model-viewer src="Probe.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="commerce" poster="poster.webp" shadow-intensity="1" auto-rotate min-camera-orbit="auto auto 0.1994m" min-field-of-view="30deg">
+  <div class="progress-bar hide" slot="progress-bar">
+     <div class="update-bar"></div>
+  </div>
+  </a>
+  <div id="ar-prompt">
+    <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+  </div>
+</model-viewer>
+        </div>
+<p><h4>
+    <span class="nowrap"> The sample is the object or material we want to study. The probe interacts with the sample's surface, and through this interaction, we can gather information about its topography, properties, and even atomic structures.</h4>
+    </span> </p>
+
+
+
     </body>
 </html>

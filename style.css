@@ -4,7 +4,9 @@ html{
 
 body{
     background-color: darkcyan;
-    color: whitesmoke
+    color: whitesmoke;
+    font-family: "Nunito", sans-serif;
+    min-height: 100vh;
 
 }
 .mod {
@@ -23,10 +25,10 @@ body{
     float: left;
 }
 .block {
-width: 15vw;
-height: 15vw;
+width: 30vw;
+height: 30vw;
 }
 
-.right {
-    float: right;
+.left {
+    float:left;
 }

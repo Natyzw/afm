@@ -5,7 +5,7 @@
         <meta name="author" content="Natnael Sinebo">
         <meta name="description" content="This page is about the AFM microscope in MIDL lab at sdsmt.">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <title>AFM  at MIDL</title>
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 <link rel="icon" href="afm.jpg" type="image/x-icon">
@@ -41,24 +41,79 @@
   </button>
 </a>
 <hr>
+<h3>Parts of a Probe</h3>
 <style>
     model-viewer {
         width:400px;
         height: 400px;
     }
 </style>
-<model-viewer src="disassemble.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="commerce" poster="poster.webp" shadow-intensity="1" auto-rotate min-camera-orbit="auto auto 0.1994m" min-field-of-view="30deg">
+<model-viewer src="Probe.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="commerce" poster="poster.webp" shadow-intensity="1" auto-rotate min-camera-orbit="auto auto 0.1994m" min-field-of-view="30deg">
   <div class="progress-bar hide" slot="progress-bar">
       <div class="update-bar"></div>
-  </div>
-  <a href="assemble.html">
-  <button slot="ar-button" id="ar-button">
-      Assemble
-  </button>
-  </a>
+  </div> 
   <div id="ar-prompt">
       <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
   </div>
 </model-viewer>
+<hr>
+<div class="block right">
+<model-viewer src="detector.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="commerce" poster="poster.webp" shadow-intensity="1" auto-rotate min-camera-orbit="auto auto 0.1994m" min-field-of-view="30deg">
+  <div class="progress-bar hide" slot="progress-bar">
+     <div class="update-bar"></div>
+  </div>
+  </a>
+  <div id="ar-prompt">
+    
+  </div>
+</model-viewer>
+</div>
+<h3>Detector</h3>
+<h4>The detector in an AFM microscope measures the interaction between the probe and the sample. It helps to create a detailed image of the sample's surface.</h4>
+
+<hr>
+<div class="block right">
+  <model-viewer src="Canteliver.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="commerce" poster="poster.webp" shadow-intensity="1" auto-rotate min-camera-orbit="auto auto 0.1994m" min-field-of-view="30deg">
+  <div class="progress-bar hide" slot="progress-bar">
+     <div class="update-bar"></div>
+  </div>
+  </a>
+  <div id="ar-prompt">
+    
+  </div>
+</model-viewer>
+</div>
+<h3>Canteliver</h3>
+<h4>The Canteliver of a probe in an AFM microscope acts like a tiny spring. It bends when it interacts with a sample, allowing us to measure the forces between the probe and the surface. When a canteliver interacts with the sample, it experiences tiny forces. These forces causes the canteliver to bend or deflect. The deflection is measured using a laser beam that reflects off the canteliver and unto the detector. By analyzing the changes in the changes in the laser beam, we can determine the forces between the probe and the sample.</h4>
+
+<hr>
+<div class="block right">
+  <model-viewer src="Laserbeam.glb " ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="commerce" poster="poster.webp" shadow-intensity="1" auto-rotate min-camera-orbit="auto auto 0.1994m" min-field-of-view="30deg">
+  <div class="progress-bar hide" slot="progress-bar">
+     <div class="update-bar"></div>
+  </div>
+  </a>
+  <div id="ar-prompt">
+    
+  </div>
+</model-viewer>
+</div>
+<h3>Laser beam</h3>
+<h4>The laser beam in an AFM microscope is used to measure the deflection of the canteliver, and as the canteliver bends or deflects due to forces from the sample, the laser beam's reflection changes. By analyzing these changes, we can determine the forces and create detailed images  of the sample's surface.</h4>
+<hr>
+<div class="block right">
+<model-viewer src="sample.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="commerce" poster="poster.webp" shadow-intensity="1" auto-rotate min-camera-orbit="auto auto 0.1994m" min-field-of-view="30deg">
+  <div class="progress-bar hide" slot="progress-bar">
+     <div class="update-bar"></div>
+  </div>
+  </a>
+  <div id="ar-prompt">
+    
+  </div>
+</model-viewer>
+</div>
+<h3>Sample</h3>
+<h4>The sample is the object or material we want to study. The probe interacts with the sample's surface, and through this interaction, we can gather information about its topography, properties, and even atomic structures.</h4>
+
 </body>
 </html> 
