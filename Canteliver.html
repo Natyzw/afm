@@ -9,7 +9,7 @@
     <link rel="icon" href="afm.jpg" type="image/x-icon">
     <link rel="stylesheet" href="style.css" type="text/css">
     </head>
-    <body> 
+    <body>
         <h1 class="centered-text">AFM Microscope</h1>
         <hr>
         <p style="text-align: center;">
@@ -37,45 +37,19 @@
             <button>
                 <h3>About</h3>
             </button>
-        </a></p>
+        </a>
+        </p>
         <hr>
         <h3 style="text-align: center;">AFM Parts</h3>
         <hr>
-        <p style="text-align: center;">The AFM microscope has the following parts
-            <br>
-            <ul style="text-align: center;">
-                <li><a href="Canteliver.html"><p>Canteliver</p></a></li>
-                <li><p>Piezoelctrical Scanner</p></li>
-                <li><p>Laser</p></li>
-                <li><p>Feedback System</p></li>
-                <li><p>Sample Holder</p></li>
-                <li><p>Electronic Control System</p></li>
-            </ul>
-        </p>
-        <hr>
-        <div class="block left"> 
-            <style>
-                model-viewer {
-                    width:200px;
-                    height: 200px;
-                }
-            </style>
-            <model-viewer src="Probe.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="commerce" poster="poster.webp" shadow-intensity="1" auto-rotate min-camera-orbit="auto auto 0.1994m" min-field-of-view="30deg">
-  <div class="progress-bar hide" slot="progress-bar">
-     <div class="update-bar"></div>
-  </div>
-  </a>
-  <div id="ar-prompt">
-    <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
-  </div>
-</model-viewer>
-        </div>
-<p><h4>
-    <span class="nowrap"> The sample is the object or material we want to study. The probe interacts with the sample's surface, and through this interaction, we can gather information about its topography, properties, and even atomic structures.</h4>
-    </span> </p>
-<br><br><br><br><br><br><br><br><br><br><br><hr>
-   
+
 <div class="block right">
+    <style>
+        model-viewer {
+            width:400px;
+            height: 400px;
+        }
+    </style>
     <model-viewer src="Canteliver.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="commerce" poster="poster.webp" shadow-intensity="1" auto-rotate min-camera-orbit="auto auto 0.1994m" min-field-of-view="30deg">
     <div class="progress-bar hide" slot="progress-bar">
        <div class="update-bar"></div>
@@ -86,15 +60,15 @@
     </div>
   </model-viewer>
   </div>
-
-        <h3>Canteliver</h3>
+  <p><h3>Canteliver</h3>
   <h4>The Canteliver of a probe in an AFM microscope acts like a tiny spring. It bends when it interacts with a sample, allowing us to measure the forces between the probe and the surface. When a canteliver interacts with the sample, it experiences tiny forces. These forces causes the canteliver to bend or deflect. The deflection is measured using a laser beam that reflects off the canteliver and unto the detector. By analyzing the changes in the changes in the laser beam, we can determine the forces between the probe and the sample.</h4>
-   
+  </p>
+
   <figure>
     <img src="Image/StandardScanner.jpg" alt="Standard Scanner image" title="Standard Scanner image" width="500" height="400" loading="lazy">
   <figcaption>
    Figure 2. Standaed Scanner of the Atomic Force Microscope 
   </figcaption>  
   </figure>
-    </body> 
+    </body>
 </html>
