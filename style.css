@@ -50,8 +50,9 @@ height: 30vw;
     }
 }
 .centered-text {
-animation:wave 1s infinite;
+animation:wave 2s infinite;
 text-align: center;
+
 }
 @keyframe backgroundAnimation {
     0% {background-position: 0%50%;
@@ -62,4 +63,15 @@ text-align: center;
 .backanime {
     animation:backgroundAnimation 10s
     infinite;
+}
+@keyframes neon {
+  0% { text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #00ff00, 0 0 80px #00ff00, 0 0 90px #00ff00, 0 0 100px #00ff00, 0 0 150px #00ff00; }
+  100% { text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #00ff00, 0 0 80px #00ff00, 0 0 90px #00ff00, 0 0 100px #00ff00, 0 0 150px #00ff00; }
+}
+
+.neon-text {
+  font-size: 48px;
+  font-family: 'Arial', sans-serif;
+  animation: neon 1s ease-in-out infinite alternate;
+
 }
